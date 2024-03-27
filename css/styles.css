@@ -1,0 +1,110 @@
+/*<uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900*/
+
+.montserrat-normal {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-bold {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 60% 1fr 15%;
+    background-image: linear-gradient(rgb(0, 167, 36) 60%, #000);
+}
+
+#metadetails {
+    padding: 2%;
+}
+
+#details {
+    display: flex;
+    align-self: flex-end;
+}
+
+#details div {
+     margin: 0 2%;
+}
+
+#album_cover {
+    height: 40vh;
+}
+
+#detail-text {
+    display: flex;
+    flex-direction: column;
+}
+
+#detail-text h1, #detail-text p {
+    margin-top: auto;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: larger;
+    color: black;
+}
+
+#play {
+    background-color: #ffffff;
+    border-radius: 50rem;
+    font-size: x-large;
+    color: #000;
+    margin: 2%;
+    width: 60px;
+    height: 60px;
+}
+  
+#div-slider {
+    padding: 1%;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+  
+#greyslider {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    margin: 1%;
+    background-color: grey;
+}
+  
+#fillbar {
+    background-color: #ffffff;
+    width: 0;
+    height: 100%;
+}
+  
+#slider-nob {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    transform: translate(0, -5px);
+}
